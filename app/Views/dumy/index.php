@@ -1,5 +1,5 @@
 <?= $this->extend('layout') ?>
 <?= $this->section('content') ?>
-    <h1>Tst Hello World</h1>
-    <h2><?= $user ?></h2>
+    <h1>Hello World</h1>
+    <h2><?php echo session()->get('username'); ?></h2>
 <?= $this->endSection() ?>

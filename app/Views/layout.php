@@ -7,23 +7,22 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>Top navbar example · Bootstrap v5.1</title>
+    <title>HSR Store</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/navbar-static/">
+    <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/navbar-static/"> -->
 
-    
 
     <!-- Bootstrap core CSS -->
 <link href="<?= base_url('bootstrap-5.1.3/css/bootstrap.min.css') ?>" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!-- Favicons -->
-<link rel="apple-touch-icon" href="/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<!-- <link rel="apple-touch-icon" href="/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
 <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
 <link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json">
 <link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
 <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
-<meta name="theme-color" content="#7952b3">
+<meta name="theme-color" content="#7952b3"> -->
 
 
     <style>
@@ -44,7 +43,7 @@
 
     
     <!-- Custom styles for this template -->
-    <link href="navbar-top.css" rel="stylesheet">
+    <!-- <link href="navbar-top.css" rel="stylesheet"> -->
   </head>
   <body>
     
@@ -58,6 +57,8 @@
 
     <script src="<?= base_url('jquery/jquery-3.6.0.min.js') ?>"></script>
     <script src="<?= base_url('bootstrap-5.1.3/js/bootstrap.bundle.min.js') ?>" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-      
+
+    <?= $this->renderSection('script') ?>
+
   </body>
 </html>
