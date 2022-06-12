@@ -13,6 +13,14 @@ composer update
 composer dump-autoload
 
 Buat file .env dalam folder toko_ci4.
+Ubah data 
+
+CI_ENVIRONMENT = development
+database.default.hostname = 127.0.0.1
+database.default.database = tugas_toko_ci4
+database.default.username = disesuaikan
+database.default.password = disesuaikan
+database.default.DBDriver = MySQLi
 
 Run Aplikasi di terminal dan pastikan kalian berada di dalam folder projek:
 
