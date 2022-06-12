@@ -1,16 +1,22 @@
 # PROJEK TUGAS BESAR BASIS DATA LANJUTAN
 # SEMESTER 4
-# Cara menjalankan aplikasi.
+## Cara menjalankan aplikasi.
 Install php v7.4
-
+Install composer https://getcomposer.org/download/
 EKSPORT DATABSE:
+
 Eksport database yang berada di folder app/Database/tugas_toko_ci4.sql
 
+Run di terminal(pastikan anda berada di dalam folder project atau di dalam folder toko_ci4):
+
+composer update
+composer dump-autoload
+
+Buat file .env dalam folder toko_ci4.
+
 Run Aplikasi di terminal dan pastikan kalian berada di dalam folder projek:
+
 php spark serve
-
-
-
 
 # About CodeIgniter 4 Application Starter
 
