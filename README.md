@@ -1,8 +1,13 @@
 # PROJEK TUGAS BESAR BASIS DATA LANJUTAN
 # SEMESTER 4
 # Cara menjalankan aplikasi.
+Install php v7.4
+
+EKSPORT DATABSE:
 Eksport database yang berada di folder app/Database/tugas_toko_ci4.sql
-Dengan nama databse tugas_toko_ci4.sql
+
+Run Aplikasi di terminal dan pastikan kalian berada di dalam folder projek:
+php spark serve
 
 
 
