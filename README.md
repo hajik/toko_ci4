@@ -1,7 +1,13 @@
 # PROJEK TUGAS BESAR BASIS DATA LANJUTAN
 # SEMESTER 4
+# Cara menjalankan aplikasi.
+Eksport database yang berada di folder app/Database/tugas_toko_ci4.sql
+Dengan nama databse tugas_toko_ci4.sql
 
-# CodeIgniter 4 Application Starter
+
+
+
+# About CodeIgniter 4 Application Starter
 
 ## What is CodeIgniter?
 
