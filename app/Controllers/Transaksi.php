@@ -92,7 +92,7 @@ class Transaksi extends BaseController
 
 	private function sendEmail($attachment, $to, $title, $message)
 	{
-		$this->email->setFrom('aonbedotcom@gmail.com','neymar11...');
+		$this->email->setFrom('youremail@gmail.com','password');
 		$this->email->setTo($to);
 
 		$this->email->attach($attachment);
