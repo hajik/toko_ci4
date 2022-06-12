@@ -110,7 +110,7 @@
 					<?= form_label('Alamat', 'alamat') ?>
 					<?= form_input($alamat) ?>
 				</div>
-				<div class="text-right">
+				<div class="text-right mt-2">
 					<?= form_submit($submit) ?>
 				</div>
 			<?= form_close() ?>

@@ -30,7 +30,10 @@ class Transaksi extends BaseController
 
 	public function index(){
 		$transaksiModel = new \App\Models\TransaksiModel();
-		$model = $transaksiModel->findAll();
+		$model = $transaksiModel->select('transaksi.*, barang.nama as nama_barang, user.username as pembeli')->join('barang', 'barang.id=transaksi.id_barang')
+					->join('user', 'user.id=transaksi.id_pembeli')
+					->findAll();
+
 		return view('transaksi/index',[
 			'model' => $model,
 		]);

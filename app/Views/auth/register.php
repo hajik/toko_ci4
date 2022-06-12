@@ -23,35 +23,39 @@
         $session = session();
 		$errors = $session->getFlashdata('errors');
     ?>
-    <h1>Register Form</h1>
-    <?php if($errors != null): ?>
-		<div class="alert alert-danger" role="alert">
-			<h4 class="alert-heading">Terjadi Kesalahan</h4>
-			<hr>
-			<p class="mb-0">
-				<?php
-					foreach($errors as $err){
-						echo $err.'<br>';
-					}
-				?>
-			</p>
-		</div>
-	<?php endif ?>
-    <?= form_open('Auth/register') ?>
-        <div class="form-group">
-            <?= form_label("Username", "username")?>
-            <?= form_input($username) ?>
+    <div class="row justify-content-center">    
+        <div class="col-6 ">
+        <h1>Register Form</h1>
+        <?php if($errors != null): ?>
+            <div class="alert alert-danger" role="alert">
+                <h4 class="alert-heading">Terjadi Kesalahan</h4>
+                <hr>
+                <p class="mb-0">
+                    <?php
+                        foreach($errors as $err){
+                            echo $err.'<br>';
+                        }
+                    ?>
+                </p>
+            </div>
+        <?php endif ?>
+        <?= form_open('Auth/register') ?>
+            <div class="form-group">
+                <?= form_label("Username", "username")?>
+                <?= form_input($username) ?>
+            </div>
+            <div class="form-group">
+                <?= form_label("Password", "password")?>
+                <?= form_password($password) ?>
+            </div>
+            <div class="form-group">
+                <?= form_label("Repeat Password", "repeatPassword")?>
+                <?= form_password($repeatPassword) ?>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <?= form_submit('submit', 'Submit', ['class' => 'btn btn-primary mt-2']) ?>
+            </div>
+        <?= form_close() ?>
         </div>
-        <div class="form-group">
-            <?= form_label("Password", "password")?>
-            <?= form_password($password) ?>
-        </div>
-        <div class="form-group">
-            <?= form_label("Repeat Password", "repeatPassword")?>
-            <?= form_password($repeatPassword) ?>
-        </div>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <?= form_submit('submit', 'Submit', ['class' => 'btn btn-primary mt-2']) ?>
-        </div>
-    <?= form_close() ?>
+    </div>
 <?= $this->endSection() ?>

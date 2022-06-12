@@ -17,14 +17,20 @@
 		<?php foreach($model as $index=>$transaksi): ?>
 			<tr>
 				<td><?= $transaksi->id ?></td>
-				<td><?= $transaksi->id_barang ?></td>
-				<td><?= $transaksi->id_pembeli ?></td>
+				<td><?= $transaksi->nama_barang ?></td>
+				<td><?= $transaksi->pembeli ?></td>
 				<td><?= $transaksi->alamat ?></td>
 				<td><?= $transaksi->jumlah ?></td>
 				<td><?= $transaksi->total_harga ?></td>
 				<td>
-					<a href="<?= site_url('transaksi/view/'.$transaksi->id) ?>" class="btn btn-primary">View</a>
-					<a href="<?= site_url('transaksi/invoice/'.$transaksi->id) ?>" class="btn btn-info">Invoice</a>
+					<a href="<?= site_url('transaksi/view/'.$transaksi->id) ?>" class="btn btn-sm btn-primary">
+						<i class="bi bi-eye"></i>
+						View
+					</a>
+					<a href="<?= site_url('transaksi/invoice/'.$transaksi->id) ?>" class="btn btn-sm btn-info">
+						<i class="bi bi-card-heading"></i>
+						Invoice
+					</a>
 				</td>
 			</tr>
 		<?php endforeach ?>
