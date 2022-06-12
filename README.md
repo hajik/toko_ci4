@@ -2,18 +2,24 @@
 # SEMESTER 4
 ## Cara menjalankan aplikasi.
 Install php v7.4
+
 Install composer https://getcomposer.org/download/
+
 EKSPORT DATABSE:
 
 Eksport database yang berada di folder app/Database/tugas_toko_ci4.sql
 
 Run di terminal(pastikan anda berada di dalam folder project atau di dalam folder toko_ci4):
 
+composer install
+
 composer update
+
 composer dump-autoload
 
 Buat file .env dalam folder toko_ci4.
-Ubah data 
+
+Ubah:
 
 CI_ENVIRONMENT = development
 database.default.hostname = 127.0.0.1
